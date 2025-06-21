@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -9,15 +10,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="ThemeServices">
   <!-- Favicon Icon -->
-  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
   <!-- Site Title -->
   <title>Medilo- Medical & Health HTML Template</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/odometer.css">
-  <link rel="stylesheet" href="assets/css/slick.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/slick.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 </head>
 
 <body>
@@ -105,7 +106,7 @@
   </header>
   <!-- End Header Section -->
   <!-- Start Page Heading -->
-  <section class="cs_page_heading cs_bg_filed cs_center" data-src="assets/img/page_heading_bg.jpg">
+  <section class="cs_page_heading cs_bg_filed cs_center" data-src="{% static 'assets/img/page_heading_bg.jpg' %}">
     <div class="container">
       <h1 class="cs_page_title">Contact Us</h1>
       <ol class="breadcrumb">
@@ -123,10 +124,10 @@
         <div class="col-lg-6">
           <div class="cs_contact_thumbnail cs_pr_40">
             <div class="cs_teeth_shape">
-              <img src="assets/img/icons/hero_shape_3.png" alt="Image" class="cs_spinner_img">
+              <img src="{% static 'assets/img/icons/hero_shape_3.png' %}" alt="Image" class="cs_spinner_img">
             </div>
             <div class="cs_contact_img">
-              <img src="assets/img/contact_2.png" alt="Image">
+              <img src="{% static 'assets/img/contact_2.png' %}" alt="Image">
             </div>
             <div class="cs_contact_bg_shape">
               <div class="cs_white_bg_shape"></div>
@@ -297,11 +298,11 @@
   <!-- End Scroll Up Button -->
 
   <!-- Script -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/jquery.slick.min.js"></script>
-  <script src="assets/js/odometer.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'assets/js/jquery-3.6.0.min.js'  %}"></script>
+  <script src="{% static 'assets/js/wow.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.slick.min.js' %}"></script>
+  <script src="{% static 'assets/js/odometer.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 
