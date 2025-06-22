@@ -20,6 +20,6 @@ from webpage.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', index, name='index'),
+    path('index', index, name='index'),
     path('contact', contact, name='contact'),
 ]
