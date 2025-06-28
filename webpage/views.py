@@ -8,10 +8,10 @@ def contact(request):
     return render(request, 'webpage/contact.html')
 
 def about(request):
-     return render(request, 'webpage/about.html')
+    return render(request, 'webpage/about.html')
 
 def blog(request):
-     return render(request, 'webpage/blog.html')
+    return render(request, 'webpage/blog.html')
 
 def error(request):
     return render(request, 'webpage/error.html')
