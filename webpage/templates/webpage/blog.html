@@ -1,17 +1,4 @@
 {%load static%}
-<?php
-
-$pdo = new PDO('mysql:host=localhost;dbname=hospital_website', 'root', '');
-
-$sql = "SELECT * FROM `blog` ";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// var_dump($results);
-?>
-
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
