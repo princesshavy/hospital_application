@@ -1,3 +1,4 @@
+{%load static%}
 <?php
 
 $pdo = new PDO('mysql:host=localhost;dbname=hospital_website', 'root', '');
@@ -26,12 +27,12 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <link rel="icon" href="assets/img/favicon.png">
   <!-- Site Title -->
   <title>Medilo- Medical & Health HTML Template</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/odometer.css">
-  <link rel="stylesheet" href="assets/css/slick.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/slick.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 </head>
 
 <body>
@@ -295,11 +296,11 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <!-- End Scroll Up Button -->
 
   <!-- Script -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/jquery.slick.min.js"></script>
-  <script src="assets/js/odometer.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'assets/js/wow.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.slick.min.js' %}"></script>
+  <script src="{% static 'assets/js/odometer.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 </html>

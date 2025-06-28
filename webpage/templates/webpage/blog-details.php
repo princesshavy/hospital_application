@@ -12,15 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="ThemeServices">
   <!-- Favicon Icon -->
-  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
   <!-- Site Title -->
   <title>Medilo- Medical & Health HTML Template</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/odometer.css">
-  <link rel="stylesheet" href="assets/css/slick.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/slick.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 </head>
 
 <body>
@@ -456,7 +456,7 @@
               <li>
                 <div class="cs_recent_post">
                   <a class='cs_recent_post_thumb' href='blog-details.html'>
-                    <img src="assets/img/recent_post_2.png" alt="">
+                    <img src="{% static assets/img/recent_post_2.png'  %}" alt="">
                   </a>
                   <div class="cs_recent_post_right">
                     <p class="">20 jun 2024</p>
@@ -494,11 +494,11 @@
   <!-- End Scroll Up Button -->
 
   <!-- Script -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/jquery.slick.min.js"></script>
-  <script src="assets/js/odometer.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'assets/js/jquery-3.6.0.min.js'  %}"></script>
+  <script src="{% static 'assets/js/wow.min.js'  %}"></script>
+  <script src="{% static 'assets/js/jquery.slick.min.js'  %}"></script>
+  <script src="{% static 'assets/js/odometer.js'  %}"></script>
+  <script src="{% static 'assets/js/main.js'  %}"></script>
 </body>
 
 </html>
