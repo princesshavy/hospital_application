@@ -25,5 +25,8 @@ urlpatterns = [
     path('contact', contact, name='contact'),
     path('about', about, name='about'),
     path('blog', blog, name='blog'),
+<<<<<<< HEAD
     path('error', error, name='error')
+=======
+>>>>>>> c5086efc209da7ebea1a51e7b15374339758b831
 ]
