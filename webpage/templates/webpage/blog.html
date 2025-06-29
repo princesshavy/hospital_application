@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="ThemeServices">
   <!-- Favicon Icon -->
-  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
   <!-- Site Title -->
   <title>Medilo- Medical & Health HTML Template</title>
   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
@@ -40,7 +40,7 @@
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class='cs_site_branding' href='index.html'>
-              <img src="assets/img/logo.svg" alt="Logo">
+              <img src="{% static 'assets/img/logo.svg' %}" alt="Logo">
             </a>
           </div>
           <div class="cs_main_header_right">
@@ -130,29 +130,29 @@
       <div class="cs_height_50 cs_height_lg_50"></div>
       <div class="cs_posts_grid cs_style_1">
         
-<?php foreach ($results as $blog): ?>
+
 
          <article class="cs_post cs_style_1">
       
           <a class='cs_post_thumbnail position-relative' href='blog-details.html'>
-            <img src="<?php echo $blog['image']; ?>" alt="Post Thumbnail">
+            <img alt="Post Thumbnail"> alt="Post Thumbnail">
             <div class="cs_post_category position-absolute">Medical</div>
           </a>
           <div class="cs_post_content position-relative">
             <div class="cs_post_meta_wrapper">
-              <div class="cs_posted_by cs_center position-absolute"><?php echo date("M d", strtotime($blog['time_posted'])); ?></div>
+              <div class="cs_posted_by cs_center position-absolute">{{ blog.time_posted|date:"M d" }}</div>
               <div class="cs_post_meta_item">
-                <img src="assets/img/icons/post_user_icon.png" alt="Icon">
-                <span>By: <?php echo $blog['author']; ?></span>
+                <img src="{% static 'assets/img/icons/post_user_icon.png'  %}" alt="Icon">
+                <span>By: blog.author havilah</span>
             
               </div>
               <div class="cs_post_meta_item">
-                <img src="assets/img/icons/post_comment_icon.png" alt="Icon">
+                <img src="{% static 'assets/img/icons/post_comment_icon.png'  %}"  alt="Icon">
                 <span>Comment</span>
               </div>
             </div>
-            <h3 class="cs_post_title"><a href='blog-details.html'><?php echo strip_tags($blog['title']); ?></a></h3>
-            <p class="cs_post_subtitle"><?php echo substr(strip_tags($blog['body']), 0, 100) ; ?></p>
+            <h3 class="cs_post_title"><a href='blog-details.html'>{{ blog.title|striptags }}</a></h3>
+            <p class="cs_post_subtitle">{{ blog.body|striptags|truncatechars:100 }}</p>
             <a class='cs_post_btn' href='blog-details.html'>
               <span>Read More</span>
               <span><i class="fa-solid fa-angle-right"></i></span>
@@ -161,7 +161,6 @@
           </div>
         
         </article>
-<?php endforeach; ?>
 
 
      
@@ -178,7 +177,7 @@
         <div class="cs_footer_col">
           <div class="cs_footer_highlight_col cs_accent_bg">
             <div class="cs_footer_logo">
-              <img src="assets/img/footer_logo.svg" alt="Logo">
+              <img src="{% static 'assets/img/footer_logo.svg'  %}"  alt="Logo">
             </div>
             <ul class="cs_footer_contact cs_mp_0">
               <li>
@@ -234,7 +233,7 @@
               <li>
                 <div class="cs_recent_post">
                   <a class='cs_recent_post_thumb' href='blog-details.html'>
-                    <img src="assets/img/recent_post_1.png" alt="">
+                    <img src="{% static 'assets/img/recent_post_1.png' %}" alt="">
                   </a>
                   <div class="cs_recent_post_right">
                     <p class="">23 jun 2024</p>
@@ -245,7 +244,7 @@
               <li>
                 <div class="cs_recent_post">
                   <a class='cs_recent_post_thumb' href='blog-details.html'>
-                    <img src="assets/img/recent_post_2.png" alt="">
+                    <img src="{% static 'assets/img/recent_post_2.png' %}" alt="">
                   </a>
                   <div class="cs_recent_post_right">
                     <p class="">20 jun 2024</p>
